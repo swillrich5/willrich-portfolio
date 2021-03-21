@@ -40,6 +40,12 @@ p {
     background-color: purple;
 }
 
+main, .hero {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .outer-container {
     padding-right: 20px;
     padding-left: 20px;
@@ -57,7 +63,7 @@ p {
 
 .picture {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: flex-end;
     padding-left: 50px;
     padding-bottom: 40px;
@@ -80,4 +86,18 @@ p {
 li {
     padding: 0 5px 0 5px;
     margin: 0 5px 0 5px;
+}
+
+.aboutme-container {
+    display: flex;
+    justify-content: space-between;
+    color: darkgray;
+    margin-top: 25px;
+}
+
+.aboutme-container h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 10px;
+    border-right: 3px solid lightgray;
 }
