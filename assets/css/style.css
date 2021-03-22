@@ -7,32 +7,33 @@ body {
     max-width: 1024px; 
     margin-left: auto;
     margin-right: auto;
+    border: 10px solid darkslategrey;
  }
 
  h1 {
-     font-size: 2rem;
+     font-size: 2.5rem;
  }
 
  h2 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
 } 
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 } 
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 } 
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.15;
 }
 
 header, section, footer {
     margin: 0;
     padding: 20px;
-    border: 1px solid #000000;
     color: whitesmoke;
 }
 
@@ -56,9 +57,9 @@ section h2 {
     width: 100%;
     text-align: center;
     padding-bottom: 5px;
-    /* border-bottom: 5px solid whitesmoke; */
     margin-top: 10px;
     margin-bottom: 10px;
+    border-bottom: 5px solid whitesmoke
 }
 
 footer {
@@ -84,36 +85,122 @@ img {
     padding-bottom: 25px;
 }
 
+.navigation-bar li {
+    padding-top: 10px;
+}
+
+.navigation-bar a {
+    margin: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navigation-bar li a:hover {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 .hero-container img {
     border-radius: 50%;
     margin-left: 10px;
 }
 
 .my-apps-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    display: block;
     padding: 10px;
-    border-left: 5px solid whitesmoke;
+    border-left: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.first-app {
+    position: relative;
+}
+
+.first-app img {
+    flex-shrink: 1;
+    width: 400px;
+    height: 150px;
 }
 
 .app-name {
     position: absolute;
     top: 20px;
     left: 20px;
+    background-color: darkgray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.app-name p {
+    text-align: center;
+    color: darkslategrey;
+}
+
+.app-name a {
+    text-decoration: none;
 }
 
 .other-app-container {
-    display: inline;
+    display: inline-block;
+    position: relative;
     margin-right: 5px;
+    width: 100%;
 }
 
-.first-app img {
-    max-width: 100%;
+#portfolio {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 5px;
+    padding: 6px;
+} 
+
+p#portfolio {
+    text-decoration: none;
+    text-align: center;
+    background-color: darkgrey;
+    color: darkslategrey;
 }
 
+.other-app-container img {
+    margin-top: 5px;
+}
+
+.other-app-container img {
+    width: 400px;
+    height: 150px;
+}
+
+#portfolio p {
+    text-align: center;
+    color: darkslategrey;
+}
+
+#portfolio a {
+    text-decoration: none;
+}
+
+.contact-info li {
+    padding-top: 10px;
+}
+
+.contact-info li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.contact-info li a:hover {
+    font-weight: bold;
+    font-size: 20px;
+}
 .contactme-container {
+    margin-bottom: 20px;
+}
 
+footer h2 {
+    padding-bottom: 2px;
+    border-bottom: 5px solid whitesmoke;
 }
 
 ul {
@@ -127,26 +214,7 @@ ul {
 /* -------------------  Mobile First ------------------- */
 /* ----------------------------------------------------- */
 
-
-
-/* media query for larger screens - large tablets and PCs */
-/* @media screen and (min-width: 992px) {
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-    }  
-    
-    .nav-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-
-}  */
-
 /* media query for larger screens - tablets */
-/* @media screen and (min-width: 768) { */
 @media screen and (min-width: 768px) {
 
     .flex-container {
@@ -173,6 +241,14 @@ ul {
         justify-content:space-around;
     }
 
+    .navigation-bar {
+        color: whitesmoke;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
     .cool-subtitle {
         margin-bottom: 25px;
     }
@@ -196,11 +272,10 @@ ul {
     }
 
     .aboutme-container {
-        /* display: block; */
-        height: 110px;
+        /* height: 185px; */
         margin-right: 25px;
         margin-bottom: 20px;
-        min-height: 100px;
+        /* min-height: 100px; */
     }
 
     .aboutme-container h2 {
@@ -215,6 +290,41 @@ ul {
     .aboutme-container p {
         border-left: 5px solid whitesmoke;
     }
+
+    .first-app {
+        margin-right: 5px;
+    }
+
+    .first-app img {
+        flex-shrink: 1;
+        width: 800px;
+        height: 300px;
+        filter: blur(2px);
+        transition: 0.3s all ease-in-out; 
+    }
+
+    .first-app img:hover {
+        filter: blur(0px);
+        transform: scale(1.01);
+    }
+    
+    .other-app-container img {
+        width: 400px;
+        height: 150px;
+        filter: blur(2px);
+        transition: 0.3s all ease-in-out;
+    }
+
+    .other-app-container img:hover {
+        filter: blur(0px);
+        transform: scale(1.01);
+    }
+
+    .other-app-container {
+        display: inline;
+        width: 50%;
+    }
+
 
     .mywork-container {
         display: flex;
@@ -233,6 +343,7 @@ ul {
     .my-apps-container {
         display: flex;
         flex-wrap: wrap;
+        border-left: 5px solid whitesmoke;
     }
 
     .contactme-container {
@@ -274,3 +385,16 @@ ul {
         justify-content: space-between;
     }
 }
+
+
+/* media query for larger screens - large tablets and PCs */
+@media screen and (min-width: 992px) {
+
+    .aboutme-container {
+        /* display: block; */
+        height: 118px;
+        min-height: 118px;
+    }
+
+
+} 
