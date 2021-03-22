@@ -4,100 +4,273 @@ html {
 }
 
 body {
-    font-size: 1.5rem;
+    max-width: 1024px; 
+    margin-left: auto;
+    margin-right: auto;
  }
 
  h1 {
-     font-size: 4rem;
+     font-size: 2rem;
  }
 
  h2 {
-    font-size: 3.5rem;
+    font-size: 1.75rem;
 } 
 
 h3 {
-    font-size: 3rem;
+    font-size: 1.5rem;
 } 
 
 h4 {
-    font-size: 2.5rem;
+    font-size: 1.25rem;
 } 
-
-h5 {
-    font-size: 2rem;
-} 
-
-h6 {
-    font-size: 1.5rem;
-}
 
 p {
     font-size: 1rem;
 }
 
-.hero {
+header, section, footer {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #000000;
+    color: whitesmoke;
+}
+
+main {
+    background-color: red;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
     background-image: url("../images/floorboards.jpg");
+}
+
+section {
+    background-color: green;
+}
+
+section h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    /* border-bottom: 5px solid whitesmoke; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    /* display: flex;
+    flex-direction: column; */
     background-color: purple;
 }
 
-main, .hero {
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-.outer-container {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    color: whitesmoke;
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-container {
-    display: flex;
+    display: block;
+    align-items: stretch;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 }
 
-.picture {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-end;
-    padding-left: 50px;
-    padding-bottom: 40px;
-}
-
-.picture img {
+.hero-container img {
     border-radius: 50%;
-    width: 15%;
+    margin-left: 10px;
 }
 
-.cool-subtitle {
-    color: whitesmoke;
-}
-
-.navigation-bar {
+.my-apps-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    border-left: 5px solid whitesmoke;
 }
 
-li {
-    padding: 0 5px 0 5px;
-    margin: 0 5px 0 5px;
+.app-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-.aboutme-container {
-    display: flex;
-    justify-content: space-between;
-    color: darkgray;
-    margin-top: 25px;
+.other-app-container {
+    display: inline;
+    margin-right: 5px;
 }
 
-.aboutme-container h2 {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-right: 10px;
-    border-right: 3px solid lightgray;
+.first-app img {
+    max-width: 100%;
+}
+
+.contactme-container {
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+/* ----------------------------------------------------- */
+/* -------------------  Mobile First ------------------- */
+/* ----------------------------------------------------- */
+
+
+
+/* media query for larger screens - large tablets and PCs */
+/* @media screen and (min-width: 992px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }  
+    
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+}  */
+
+/* media query for larger screens - tablets */
+/* @media screen and (min-width: 768) { */
+@media screen and (min-width: 768px) {
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }    
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .navigation-bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content:space-around;
+    }
+
+    .cool-subtitle {
+        margin-bottom: 25px;
+    }
+
+    section h2 {
+        display: inline;
+        float: left;
+        height: 100%;
+        max-width: 100px;
+        min-height: 100px;
+        text-align: right;
+        padding-right: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        display: block;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .aboutme-container {
+        /* display: block; */
+        height: 110px;
+        margin-right: 25px;
+        margin-bottom: 20px;
+        min-height: 100px;
+    }
+
+    .aboutme-container h2 {
+        min-width: 200px;
+        min-height: 100%;
+        text-align: right;
+        padding-right: 10px;
+        border-bottom: none;
+        margin-right: 10px;
+    }
+
+    .aboutme-container p {
+        border-left: 5px solid whitesmoke;
+    }
+
+    .mywork-container {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .mywork-container h2 {
+        min-width: 200px;
+        min-height: 100%;
+        text-align: right;
+        padding-right: 10px;
+        border-bottom: none;
+        margin-right: 10px;
+    }
+
+    .my-apps-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contactme-container {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .contact-info-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-left: 5px solid whitesmoke;
+    }
+
+    .contact-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .contactme-container h2 {
+        min-width: 200px;
+        min-height: 50px;
+        text-align: right;
+        padding-right: 10px;
+        border-bottom: none;
+        margin-right: 10px;
+    }
+
+    .contact-info li a {
+        color: whitesmoke;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

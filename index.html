@@ -1,46 +1,81 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
+
+        <title>Scott Willrich</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-
-        <header>
-            <div class="hero">
-                <nav>
-                    <div class="outer-container">
-                        <div class="nav-container">
-                            <h1>Scott Willrich</h1>
-                            <ul class="navigation-bar">
-                                <li>About Me</li>
-                                <li>My Work</li>
-                                <li>Contact</li>
-                                <li>Resume</li>
-                            </ul>
-                        </div>
-                        <div class="picture">
-                            <img src="./assets/images/Scott.jpg" alt="picture of Scott Wilrich">
-                            <h4 class="cool-subtitle">
-                                Aspiring Full Stack Web Developer
-                            </h4>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
         <main>
-            <div class="outer-container">
-                <div class="aboutme-container">
-                    <h2>About Me</h2>
-                    <p>Making the leap to a second career in web development after spending the last 23 years as the CIO of Texas Municipal Retirement System.  While I have a degree in Computer Science from the University of Texas at Austin, I'm currently refreshing my software development skills in the University of Texas Coding Boot Camp.</p>
+            <header>
+                <div class="flex-container nav-container">
+                    <h1>Scott Willrich</h1>
+                    <ul class="navigation-bar flex-container">
+                        <li>About Me</li>
+                        <li>My Work</li>
+                        <li>Contact</li>
+                        <li>Resume</li>    
+                    </ul>
                 </div>
-            </div>
-
-        </main>
-        <footer>
-
-        </footer>
+                <div class="hero-container flex-container">
+                    <div class="image-container">
+                        <img src="./assets/images/Scott.jpg" alt="picture of Scott Wilrich">
+                    </div>
+                    <h3 class="cool-subtitle">
+                        Aspiring Full Stack Web Developer
+                    </h4>
+                </div>
+            </header> 
+            <section>
+                <div class="flex-container aboutme-container">
+                    <h2>About Me</h2>
+                    <p>Making the leap to a second career in web development after spending the last 23 years as the CIO of Texas Municipal Retirement System.  While I have a degree in Computer Science from the University of Texas at Austin, I'm currently refreshing my software development skills in the University of Texas Coding Boot Camp. After completion of the boot camp, I'm seeking either a part-time or full-time entry-level web developer position.  Please see my contact info below</p>
+                </div>
+                <div class="flex-container mywork-container">
+                    <h2>My Work</h2>   
+                    <div class="my-apps-container">
+                        <div class="first-app flex-container">
+                            <a href="https://www.tmrs.com"><img src="https://via.placeholder.com/800x300" alt=""></a>
+                            <div class="app-name">
+                                My First Application
+                            </div>
+                        </div>
+                        <div class="flex-container otherapps-row">
+                            <div class="other-app-container">
+                                <a href="https://www.tmrs.com"><img src="https://via.placeholder.com/400x150" alt=""></a>
+                            </div>
+                            <div class="other-app-container">
+                                <a href="https://www.tmrs.com"><img src="https://via.placeholder.com/400x150" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="flex-container otherapps-row">
+                            <div class="other-app-container">
+                                <a href="https://www.tmrs.com"><img src="https://via.placeholder.com/400x150" alt=""></a>
+                            </div>
+                            <div class="other-app-container">
+                                <a href="https://www.tmrs.com"><img src="https://via.placeholder.com/400x150" alt=""></a>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="flex-container contactme-container">
+                    <h2>Contact Me</h2>
+                    <div class="contact-info-container">
+                        <ul class="contact-info">
+                            <li><a href="tel:512-867-5309">512-867-5309</a></li>
+                            <li><a href="mailto:swillrich@gmail.com">swillrich@gmail.com</a></li>
+                            <li><a href="https://github.com/swillrich5">GitHub</a></li>
+                            <li><a href="https://twitter.com/swillrich">Twitter</a></li>
+                        </ul>                    
+                    </div>
+                </div>
+            </footer>
+            </main>
     </body>
 </html>
