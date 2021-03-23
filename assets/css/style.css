@@ -105,7 +105,7 @@ img {
     font-size: 20px;
 }
 
-/* ---------------  Her section tags --------------- */
+/* ---------------  Hero section tags --------------- */
 
 .hero-container {
     color: var(--ice-blue);
@@ -397,7 +397,6 @@ ul {
         display: inline;
         width: 50%;
     }
-
 
     .mywork-container {
         display: flex;
