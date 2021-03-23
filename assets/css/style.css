@@ -1,6 +1,5 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
-    color: whitesmoke;
 }
 
 body {
@@ -34,7 +33,7 @@ p {
 header, section, footer {
     margin: 0;
     padding: 20px;
-    color: whitesmoke;
+    color: #D4F1F1;
 }
 
 main {
@@ -45,12 +44,11 @@ main {
 header {
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    background-image: url("../images/floorboards.jpg");
+    background-color: #154c79;
 }
 
 section {
-    background-color: green;
+    background-color: #76b5c5;
 }
 
 section h2 {
@@ -59,13 +57,14 @@ section h2 {
     padding-bottom: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 5px solid whitesmoke
+    border-bottom: 5px solid whitesmoke;
 }
 
 footer {
     /* display: flex;
     flex-direction: column; */
-    background-color: purple;
+    /* background-color: #e28743; */
+    background-color: #063970;
 }
 
 img {
@@ -98,6 +97,13 @@ img {
 .navigation-bar li a:hover {
     font-weight: bolder;
     font-size: 20px;
+}
+
+.hero-container {
+    color: #D4F1F1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url("../images/floorboards.jpg");
 }
 
 .hero-container img {
@@ -196,6 +202,7 @@ p#portfolio {
 }
 .contactme-container {
     margin-bottom: 20px;
+    color: #D4F1F1;
 }
 
 footer h2 {
@@ -242,7 +249,6 @@ ul {
     }
 
     .navigation-bar {
-        color: whitesmoke;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -378,7 +384,6 @@ ul {
     }
 
     .contact-info li a {
-        color: whitesmoke;
         width: 100%;
         display: flex;
         flex-direction: row;
