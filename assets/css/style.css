@@ -1,7 +1,15 @@
+
+/* ------------- Global Variables ------------- */
+
 :root {
-    --ice-blue: #D4F1F1;
-    --slate-blue: #154c79;
+    --ice-blue: #D4F1F1;        /* Text color throughout the page */
+    --slate-blue: #154c79;      /* Background color for header    */
+    --dark-blue: #063970;       /* Footer background and some text color */
   }
+
+/* ---------------  global tags --------------- */
+/* Mobile first design - first set of tags apply to mobile version */
+/* See below for tags that override for tablet and larger displays */
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +19,6 @@ body {
     max-width: 1024px; 
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid darkslategrey;
  }
 
  h1 {
@@ -57,14 +64,11 @@ section h2 {
     padding-bottom: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 5px solid whitesmoke;
+    border-bottom: 5px solid var(--ice-blue);
 }
 
 footer {
-    /* display: flex;
-    flex-direction: column; */
-    /* background-color: #e28743; */
-    background-color: #063970;
+    background-color: var(--dark-blue);
 }
 
 img {
@@ -76,6 +80,8 @@ img {
     display: flex;
     flex-direction: column;
 }
+
+/* ---------------  navigation section tags --------------- */
 
 .nav-container {
     display: block;
@@ -90,7 +96,7 @@ img {
 
 .navigation-bar a {
     margin: 20px;
-    color: whitesmoke;
+    color: var(--ice-blue);
     text-decoration: none;
 }
 
@@ -98,6 +104,8 @@ img {
     font-weight: bolder;
     font-size: 20px;
 }
+
+/* ---------------  Her section tags --------------- */
 
 .hero-container {
     color: var(--ice-blue);
@@ -120,6 +128,8 @@ img {
     margin-left: auto;
 }
 
+/* ---------------  work secion tags --------------- */
+
 .first-app {
     position: relative;
 }
@@ -134,25 +144,20 @@ img {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: darkgray;
+    background-color: var(--ice-blue);
     border-radius: 5px;
-    padding: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .app-name p {
     text-align: center;
-    color: darkslategrey;
+    color: var(--dark-blue);
 }
 
 .app-name a {
     text-decoration: none;
-}
-
-.other-app-container {
-    display: inline-block;
-    position: relative;
-    margin-right: 5px;
-    width: 100%;
 }
 
 #portfolio {
@@ -166,10 +171,9 @@ img {
 p#portfolio {
     text-decoration: none;
     text-align: center;
-    background-color: darkgrey;
-    color: darkslategrey;
+    background-color: var(--ice-blue);
+    color: var(--dark-blue);
 }
-
 
 #pre-work {
     position: absolute;
@@ -182,8 +186,8 @@ p#portfolio {
 p#pre-work {
     text-decoration: none;
     text-align: center;
-    background-color: darkgrey;
-    color: darkslategrey;
+    background-color: var(--ice-blue);
+    color: var(--dark-blue);
 }
 
 #coming-soon {
@@ -202,10 +206,9 @@ p#pre-work {
 p#coming-soon {
     text-decoration: none;
     text-align: center;
-    background-color: darkgrey;
-    color: darkslategrey;
+    background-color: var(--ice-blue);
+    color: var(--dark-blue);
 }
-
 
 #coming-soon2 {
     position: absolute;
@@ -223,8 +226,15 @@ p#coming-soon {
 p#coming-soon2 {
     text-decoration: none;
     text-align: center;
-    background-color: darkgrey;
-    color: darkslategrey;
+    background-color: var(--ice-blue);
+    color: var(--dark-blue);
+}
+
+.other-app-container {
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    width: 100%;
 }
 
 .other-app-container img {
@@ -236,21 +246,12 @@ p#coming-soon2 {
     height: 150px;
 }
 
-#portfolio p {
-    text-align: center;
-    color: darkslategrey;
-}
-
-#portfolio a {
-    text-decoration: none;
-}
-
 .contact-info li {
     padding-top: 10px;
 }
 
 .contact-info li a {
-    color: whitesmoke;
+    color: var(--ice-blue);
     text-decoration: none;
 }
 
@@ -262,6 +263,8 @@ p#coming-soon2 {
     margin-bottom: 20px;
 }
 
+/* ---------------  footer secion tags --------------- */
+
 footer h2 {
     padding-bottom: 2px;
     border-bottom: 5px solid var(--ice-blue);
@@ -272,7 +275,7 @@ ul {
 }
 
 /* ----------------------------------------------------- */
-/* -------------------  Mobile First ------------------- */
+/* ----------  Tags For Larger Screens Below  ---------- */
 /* ----------------------------------------------------- */
 
 /* media query for larger screens - tablets */
@@ -282,6 +285,8 @@ ul {
         display: flex;
         flex-direction: row;
     }    
+
+/* ---------------  nav secion tags --------------- */
 
     .nav-container {
         display: flex;
@@ -304,9 +309,14 @@ ul {
         justify-content: flex-end;
     }
 
+/* ---------------  hero section tags --------------- */
+
     .cool-subtitle {
         margin-bottom: 25px;
     }
+
+
+/* -----------  main content section tags ----------- */
 
     section h2 {
         display: inline;
@@ -325,6 +335,12 @@ ul {
         padding-left: 10px;
         text-align: left;
     }
+
+    section img {
+        border: 3px solid var(--slate-blue);
+    }
+    
+/* ---------------  about me section tags --------------- */
 
     .aboutme-container {
         /* height: 185px; */
@@ -346,10 +362,8 @@ ul {
         border-left: 5px solid var(--ice-blue);
     }
 
-    section img {
-        border: 3px solid var(--slate-blue);
-    }
-
+/* ---------------  work section tags --------------- */
+    
     .first-app {
         margin-right: 5px;
     }
@@ -445,11 +459,11 @@ ul {
 }
 
 /* media query for larger screens - large tablets and PCs */
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
 
     .aboutme-container {
         /* display: block; */
         height: 118px;
         min-height: 118px;
     }
-} 
+}  */
