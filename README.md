@@ -2,6 +2,9 @@
 
 willrich-portfolio is a website that hosts my portfolio (Scott Willrich)
 
+## Deployed Application
+https://swillrich5.github.io/willrich-portfolio/
+
 ## GitHub
 
 https://github.com/swillrich5/willrich-portfolio
