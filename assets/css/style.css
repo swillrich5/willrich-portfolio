@@ -1,3 +1,8 @@
+:root {
+    --ice-blue: #D4F1F1;
+    --slate-blue: #154c79;
+  }
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -33,18 +38,13 @@ p {
 header, section, footer {
     margin: 0;
     padding: 20px;
-    color: #D4F1F1;
-}
-
-main {
-    background-color: red;
-    
+    color: var(--ice-blue);
 }
 
 header {
     display: flex;
     flex-direction: column;
-    background-color: #154c79;
+    background-color: var(--slate-blue);
 }
 
 section {
@@ -81,7 +81,7 @@ img {
     display: block;
     align-items: stretch;
     justify-content: space-between;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .navigation-bar li {
@@ -100,7 +100,7 @@ img {
 }
 
 .hero-container {
-    color: #D4F1F1;
+    color: var(--ice-blue);
     padding-top: 30px;
     padding-bottom: 30px;
     background-image: url("../images/floorboards.jpg");
@@ -109,6 +109,7 @@ img {
 .hero-container img {
     border-radius: 50%;
     margin-left: 10px;
+    padding-bottom: 5px;
 }
 
 .my-apps-container {
@@ -169,6 +170,63 @@ p#portfolio {
     color: darkslategrey;
 }
 
+
+#pre-work {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 5px;
+    padding: 6px;
+} 
+
+p#pre-work {
+    text-decoration: none;
+    text-align: center;
+    background-color: darkgrey;
+    color: darkslategrey;
+}
+
+#coming-soon {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 5px;
+    padding: 6px;    
+    visibility: visible;
+}
+
+#coming-soon:hover {
+    visibility: hidden;
+}
+
+p#coming-soon {
+    text-decoration: none;
+    text-align: center;
+    background-color: darkgrey;
+    color: darkslategrey;
+}
+
+
+#coming-soon2 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 5px;
+    padding: 6px;    
+    visibility: visible;
+}
+
+#coming-soon2:hover {
+    visibility: hidden;
+}
+
+p#coming-soon2 {
+    text-decoration: none;
+    text-align: center;
+    background-color: darkgrey;
+    color: darkslategrey;
+}
+
 .other-app-container img {
     margin-top: 5px;
 }
@@ -202,20 +260,16 @@ p#portfolio {
 }
 .contactme-container {
     margin-bottom: 20px;
-    color: #D4F1F1;
 }
 
 footer h2 {
     padding-bottom: 2px;
-    border-bottom: 5px solid whitesmoke;
+    border-bottom: 5px solid var(--ice-blue);
 }
 
 ul {
     list-style-type: none;
 }
-
-
-
 
 /* ----------------------------------------------------- */
 /* -------------------  Mobile First ------------------- */
@@ -234,11 +288,6 @@ ul {
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
-    }
-
-    .navigation-bar {
-        display: flex;
-        flex-direction: row;
     }
 
     .hero-container {
@@ -294,7 +343,11 @@ ul {
     }
 
     .aboutme-container p {
-        border-left: 5px solid whitesmoke;
+        border-left: 5px solid var(--ice-blue);
+    }
+
+    section img {
+        border: 3px solid var(--slate-blue);
     }
 
     .first-app {
@@ -349,7 +402,7 @@ ul {
     .my-apps-container {
         display: flex;
         flex-wrap: wrap;
-        border-left: 5px solid whitesmoke;
+        border-left: 5px solid var(--ice-blue);
     }
 
     .contactme-container {
@@ -362,7 +415,7 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-left: 5px solid whitesmoke;
+        border-left: 5px solid var(--ice-blue);
     }
 
     .contact-info {
@@ -391,7 +444,6 @@ ul {
     }
 }
 
-
 /* media query for larger screens - large tablets and PCs */
 @media screen and (min-width: 992px) {
 
@@ -400,6 +452,4 @@ ul {
         height: 118px;
         min-height: 118px;
     }
-
-
 } 
