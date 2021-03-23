@@ -457,13 +457,3 @@ ul {
         justify-content: space-between;
     }
 }
-
-/* media query for larger screens - large tablets and PCs */
-/* @media screen and (min-width: 992px) {
-
-    .aboutme-container {
-        /* display: block; */
-        height: 118px;
-        min-height: 118px;
-    }
-}  */
